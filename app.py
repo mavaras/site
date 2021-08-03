@@ -1,8 +1,8 @@
 # Standard libraries
+import csv
 import os
 
 # Third party libraries
-import csv
 from flask import (
     Flask,
     render_template,
