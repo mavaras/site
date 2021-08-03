@@ -1,0 +1,21 @@
+{% extends 'schema.html' %}
+{% block title %}Blog {% endblock %}
+
+
+{% block content %}
+
+<div class="container-fluid justify-content-center" style="width:auto; max-width: 700px">
+  <h2 style="font-weight: 750;">Blog</h2><hr>
+  {% for post in posts %}
+    <div class="row">
+      <div class="col" style="display: flex; flex-direction: column; width: 20%; padding: 10">
+        {{post.date}} 
+      </div>
+      <div style="width: 80%">
+        <a href="/blog/post/{{post.id}}">{{post.title}}</a>
+      </div>
+    </div>
+  {% endfor %}<hr>
+</div>
+
+{% endblock %}

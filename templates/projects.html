@@ -1,0 +1,17 @@
+{% extends 'schema.html' %}
+{% block title %}Projects {% endblock %}
+
+{% block content %}
+<style>
+  h1 { font-weight: 450; }
+</style>
+<br>
+<div class="container-fluid justify-content-center" style="width:auto; max-width: 700px">
+  {% for md in projects %}
+    {{ md|safe }}
+    <br><br><br>
+  {% endfor %}
+  <br><br><br>
+</div>
+
+{% endblock %}

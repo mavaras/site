@@ -1,0 +1,15 @@
+<html>
+<head>
+  <title>the fucking music that I love</title>
+</head>
+<body>
+  <h2>Music directory</h2>
+  {% for album, author, year, genre, remarkable, cover in rows %}
+    {% if remarkable == "!" %}
+      <li><strong>{{author}}, {{album}} ({{year}})</strong></li>
+    {% else %}
+      <li>{{author}}, {{album}} ({{year}})</li>
+    {% endif %}
+  {% endfor %}
+</body>
+</html>

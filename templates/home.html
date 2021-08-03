@@ -1,0 +1,38 @@
+{% extends 'schema.html' %}
+{% block title %}mariovaras {% endblock %}
+
+{% block content %}
+<script>
+  $(document).ready(function() {
+    $('[data-toggle="tooltip"]').tooltip();
+  });
+</script>
+<div style="position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);">
+  <div class="justify-content-center">
+    <div style="margin-bottom: 45px; margin-left: auto; margin-right: auto; display: block; width: 190px;">
+      <img class="img-thumbnail rounded-circle" src="{{ url_for('static', filename='me.jpg') }}" style="border: 0"/>
+    </div>
+    <div class="container" style="width:auto; max-width: 700px;">
+      <h2 align="center" style="margin-bottom: 28px; font-weight: 750;">
+        Mario Varas
+      </h2>
+      <h6 align="center" style="font-size: 20px; margin-bottom: 28px;">
+        sofware developer, traveler, life enthusiast
+      </h6>
+    </div>
+  </div>
+
+  <!--contact-->
+  <hr class="col-4">
+  <div>
+    <div class="text-center" style="margin-left: 60"><br>
+      <a href="https://github.com/mavaras" target="blank" data-toggle="tooltip" data-placement="bottom" title="GitHub"><i class="fab fa-github" aria-hidden="true" style="font-size:22px;color:black;padding:12px"></i></a>
+      <a href="https://gitlab.com/mvarasatfluid" target="blank" data-toggle="tooltip" data-placement="bottom" title="GitLab"><i class="fab fa-gitlab" aria-hidden="true" style="font-size:22px;color:black;padding:12px"></i></a>
+      <a href="mailto:elasgard@hotmail.es" target="blank" data-toggle="tooltip" data-placement="bottom" title="Send me an Email"><i class="fa fa-envelope" aria-hidden="true" style="font-size:22px;color:black;padding:12px"></i></a>
+      <a href="https://www.linkedin.com/in/mario-varas/" target="blank" data-toggle="tooltip" data-placement="bottom" title="LinkedIn"><i class="fab fa-linkedin" aria-hidden="true" style="font-size:22px;color:black;padding:12px"></i></a>
+      <a href="https://www.instagram.com/mariov_r_s" target="blank" data-toggle="tooltip" data-placement="bottom" title="Instagram"><i class="fab fa-instagram" aria-hidden="true" style="font-size:22px;color:black;padding:12px"></i></a>
+    </div>
+  </div><br>
+</div>
+
+{% endblock %}
