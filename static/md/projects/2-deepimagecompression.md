@@ -1,7 +1,7 @@
 # Deep Image Compression
 ---
 
-This project is a [lossy](https://en.wikipedia.org/wiki/Lossy_compression) image compression system using deep learning based on a [CAE](https://arxiv.org/abs/1703.00395) architecture.
+This project is a [lossy](https://en.wikipedia.org/wiki/Lossy_compression) image compression system using **deep learning** based on a [CAE](https://arxiv.org/abs/1703.00395) architecture.
 
 [https://github.com/mavaras/deep-image-compression](https://github.com/mavaras/deep-image-compression)
 
