@@ -88,8 +88,8 @@ def blog():
         for post in posts
     ]
     posts = [
-        {'id': post_info[0], 'date': post_info[1], 'title': title}
-        for title in titles for post_info in posts_info
+        {'id': post_info[0], 'date': post_info[1].replace('-', '/'), 'title': titles[i]}
+        for i, post_info in enumerate(posts_info)
     ]
 
     return render_template('blog.html', posts=posts)
