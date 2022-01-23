@@ -3,20 +3,16 @@
 <html lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-      <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap" rel="stylesheet">
-      <link rel="icon" href="static/me.jpg">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-      <script src="https://kit.fontawesome.com/5d1323225a.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="icon" href="static/me.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/5d1323225a.js"></script>
       
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    
-    <!--github charts-->
-    <script src="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.css"/>
       
     <title>{% block title %} {% endblock %} |  mariovaras</title>
   </head>
@@ -39,6 +35,9 @@
             <li class="nav-item">
               <a class="nav-link" href="/projects">Projects</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/blog">Blog</a>
+            </li>
           </div>
         </div>
       </div>
@@ -48,7 +47,7 @@
     {% block content %} {% endblock %}
   </body>
 	<footer class="footer bg-light fixed-bottom justify-content-center">
-	  <div class="container" style="text-align:right; margin-left: 200px">
+	  <div class="container" style="text-align:right; width: 100%; margin-right: 0;">
       <a href="https://github.com/mavaras" style="color:inherit"><i class="fab fa-github" aria-hidden="true" style="font-size:18px;color:#adb5bd;padding:3px"></i></a>
       <a href="https://gitlab.com/mvarasatfluid" style="color:inherit"><i class="fab fa-gitlab" aria-hidden="true" style="font-size:18px;color:#adb5bd;padding:3px"></i></a>
       <a href="mailto:elasgard@hotmail.es" style="color:inherit"><i class="fa fa-envelope" aria-hidden="true" style="font-size:18px;color:#adb5bd;padding:3px"></i></a>
